@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="js/require.js" data-main="js/main"></script>
+</head>
+<body>
+输入框1：<input type="text" id="input1" />
+<br />
+输入框2：<input type="text" id="input2" />
+<br />
+<button onclick="click_all()">全部加载</button>
+<button onclick="click_jquery()">加载jQuery</button>
+<button onclick="click_zepto()">加载Zepto</button>
+</body>
+<script>
+    function click_all(){
+        require(['zepto','jquery'],function($,jQuery){
+            $('#input1').val('click_all zepto !');
+            jQuery('#input2').val('click_all jQuery!');
+        });
+    }
+
+    function click_jquery(){
+        require(['jquery'],function(jQuery){
+            jQuery('#input2').val('click_jquery jquery!');
+        });
+    }
+
+    function click_zepto(){
+        require(['zepto'],function($){
+            $('#input1').val('click_zepto zepto!');
+        });
+    }
+</script>
+</html>

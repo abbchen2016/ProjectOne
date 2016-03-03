@@ -1,0 +1,17 @@
+{
+  "name": "ProjectOne",
+  "version": "0.0.1",
+  "description": "this project is a simple home work.",
+  "main": "app.js",
+  "dependencies": {
+    "compression": "^1.6.1",
+    "express": "~4.13.4",
+    "mysql": "~2.10.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abb_chen",
+  "license": "ISC"
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>测试闭包for循环中的申明变量i的作用域</title>
+</head>
+<body>
+<h1>测试闭包for循环中的申明变量i的作用域</h1>
+</body>
+</html>
+        <script>
+            function aaa(){
+                !function (){
+                    for(var i = 0;i<5;i++){
+                        alert(i);
+                    }
+                }();
+            }
+            aaa();
+        </script>
